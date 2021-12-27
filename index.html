@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        
         body {
             margin: 0;
             font-family: 'Prompt', Montserrat;
@@ -124,12 +128,99 @@
         .wave2 .shape-fill {
             fill: #52AB98;
         }
+
+        .container {
+            width: 87%;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            background-color: #28303b;
+        }
+
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        h1 {
+            margin-left: 1rem;
+            margin-top: 0.67em;
+
+        }
+
+        nav {
+            float: right;
+            padding-top: 0%;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0%;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 55px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            text-transform: capitalize;
+
+        }
+
+        nav a:hover {
+            color: aquamarine;
+        }
+
+        nav a:before{
+            content: '';
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: aquamarine;
+            position: absolute;
+            top: 0;
+            width: 0%;
+        
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before{
+            width: 100%;
+        }
+       
     </style>
 </head>
 
 
 
 <body>
+
+    <header>
+        <div class="container">
+            <!-- <h1>Benjamin Goodhart</h1> -->
+            <nav>
+                <ul>
+                    <li><a href="#section2">Home</a></a></li>
+                    <li><a href="#">About</a></a></li>
+                    <li><a href="#">Links</a></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+
+    </header>
 
     <section>
         <h1>Nice Curves</h1>
@@ -139,7 +230,7 @@
     </section>
 
 
-    <section class="tealblue">
+    <section class="tealblue" id="section2">
         <h1>Nice Curves</h1>
         <p>Sapiente cumque corporis praesentium, consectetur tenetur et quisquam veritatis placeat repellat dolor iste
             minus dolore odio delectus illum reprehenderit! Molestias quasi, rerum dolor sequi doloremque eos
