@@ -12,16 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
+            /* padding-left: 5%;
+            padding-right: 5%; */
+
         }
-        
+
         body {
             margin: 0;
             font-family: 'Prompt', Montserrat;
             color: white;
             background: #202731;
             overflow-x: hidden;
+            
         }
 
         section {
@@ -31,6 +35,12 @@
             align-items: center;
             min-width: 400px;
             padding: 100px 20vw;
+        }
+
+        h1 {
+            margin: 0;
+            padding-top: 0;
+            padding-bottom: 0;
         }
 
         .tealblue {
@@ -132,6 +142,7 @@
         .container {
             width: 87%;
             margin: 0 auto;
+            height: 35px;
         }
 
         header {
@@ -147,7 +158,8 @@
 
         h1 {
             margin-left: 1rem;
-            margin-top: 0.67em;
+            margin-top: 0;
+            margin-bottom: 0;
 
         }
 
@@ -181,7 +193,7 @@
             color: aquamarine;
         }
 
-        nav a:before{
+        nav a:before {
             content: '';
             display: block;
             height: 3px;
@@ -190,14 +202,32 @@
             position: absolute;
             top: 0;
             width: 0%;
-        
+
             transition: all ease-in-out 250ms;
         }
 
-        nav a:hover::before{
+        nav a:hover::before {
             width: 100%;
         }
-       
+
+        .homePage {
+            height: 100vh;
+
+        }
+
+        h2 {
+            font-size: 40px;
+            transform: translateX(-500px) translateY(-20px);
+            text-align: justify;
+            padding-left: 0; 
+        }
+
+        p {
+            text-align: justify;
+            transform: translateX(-500px) translateY(-20px);
+            word-spacing: 3px;
+
+        }
     </style>
 </head>
 
@@ -205,7 +235,9 @@
 
 <body>
 
+    <!-- <script>$("html,body").scrollTop(0);</script> -->
     <header>
+
         <div class="container">
             <!-- <h1>Benjamin Goodhart</h1> -->
             <nav>
@@ -222,12 +254,14 @@
 
     </header>
 
-    <section>
-        <h1>Nice Curves</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, cum facilis iure sunt nesciunt at sapiente
-            blanditiis provident sint placeat eos odio molestiae reiciendis, veritatis explicabo. Tempore atque corporis
-            totam!</p>
+
+
+
+    <section class="homePage">
+        <h2>Student From Ohio That Loves Cars</h2>
+        <p>I'm a current student at Kent State looking for employment within the computer science field.</p>
     </section>
+
 
 
     <section class="tealblue" id="section2">
